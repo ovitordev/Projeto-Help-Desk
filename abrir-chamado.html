@@ -11,8 +11,8 @@
         <h1>ChamaAI</h1>
         <nav>
             <ul>
-                <li><a href="/index.html">Início</a></li>
-                <li><a href="/abrir-chamado.html">Abrir Chamado</a></li>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="abrir-chamado.html">Abrir Chamado</a></li>
                 <li><a href="#">Configurações</a></li>
                 <li><a href="#">Sobre</a></li>
             </ul>
@@ -23,18 +23,26 @@
         <h2>Abrir Novo Chamado</h2>
 
         <section>
-            <form action="/enviar-dados" method="post">
+            <form>
                 <label for="titulo">Título:</label>
-                <input type="text" id="titulo"/>
+                <input type="text" id="titulo" name="titulo" required/>
 
                 <label for="desc">Descrição:</label>
-                <textarea id="nome"></textarea>
+                <textarea id="desc" name="desc" required></textarea>
 
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome"/>
+                <label for="categoria">Categoria:</label>
+                <select id="categoria" name="categoria">
+                    <option value="hardware">Hardware</option>
+                    <option value="software">Software</option>
+                    <option value="rede">Rede</option>
+                </select>
 
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome"/>
+                <label for="prioridade">Prioridade:</label>
+                <select id="prioridade" name="prioridade">
+                    <option value="baixa">Baixa</option>
+                    <option value="media">Média</option>
+                    <option value="alta">Alta</option>
+                </select>
 
                 <button type="submit">Enviar chamado</button>
             </form>
