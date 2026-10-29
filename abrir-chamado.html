@@ -25,24 +25,34 @@
         <section>
             <form>
                 <label for="titulo">Título:</label>
-                <input type="text" id="titulo" name="titulo" required/>
+                <input type="text" id="titulo" name="titulo" required />
+
+                <p></p>
 
                 <label for="desc">Descrição:</label>
-                <textarea id="desc" name="desc" required></textarea>
+                <textarea id="desc" name="desc" rows="9" cols="50" required></textarea>
+
+                <p></p>
 
                 <label for="categoria">Categoria:</label>
-                <select id="categoria" name="categoria">
+                <select id="categoria" name="categoria" required>
+                    <option value="" selected disabled>Selecione uma categoria</option>
                     <option value="hardware">Hardware</option>
                     <option value="software">Software</option>
                     <option value="rede">Rede</option>
                 </select>
 
+                <p></p>
+
                 <label for="prioridade">Prioridade:</label>
-                <select id="prioridade" name="prioridade">
+                <select id="prioridade" name="prioridade" required>
+                    <option value="" selected disabled>Selecione a prioridade</option>
                     <option value="baixa">Baixa</option>
                     <option value="media">Média</option>
                     <option value="alta">Alta</option>
                 </select>
+
+                <p></p>
 
                 <button type="submit">Enviar chamado</button>
             </form>
