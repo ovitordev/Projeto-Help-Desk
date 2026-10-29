@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>ChamaAI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abrir Chamado | ChamaAI</title>
 </head>
 
 <body>
@@ -23,41 +24,31 @@
     <main>
         <h2>Abrir Novo Chamado</h2>
 
-        <section>
-            <form>
-                <label for="titulo">Título:</label>
-                <input type="text" id="titulo" name="titulo" required />
+        <form>
+            <label for="titulo">Título:</label>
+            <input type="text" id="titulo" name="titulo" required />
 
-                <p></p>
+            <label for="desc">Descrição:</label>
+            <textarea id="desc" name="desc" rows="9" cols="50" required></textarea>
 
-                <label for="desc">Descrição:</label>
-                <textarea id="desc" name="desc" rows="9" cols="50" required></textarea>
+            <label for="categoria">Categoria:</label>
+            <select id="categoria" name="categoria" required>
+                <option value="" selected disabled>Selecione uma categoria</option>
+                <option value="hardware">Hardware</option>
+                <option value="software">Software</option>
+                <option value="rede">Rede</option>
+            </select>
 
-                <p></p>
+            <label for="prioridade">Prioridade:</label>
+            <select id="prioridade" name="prioridade" required>
+                <option value="" selected disabled>Selecione a prioridade</option>
+                <option value="baixa">Baixa</option>
+                <option value="media">Média</option>
+                <option value="alta">Alta</option>
+            </select>
 
-                <label for="categoria">Categoria:</label>
-                <select id="categoria" name="categoria" required>
-                    <option value="" selected disabled>Selecione uma categoria</option>
-                    <option value="hardware">Hardware</option>
-                    <option value="software">Software</option>
-                    <option value="rede">Rede</option>
-                </select>
-
-                <p></p>
-
-                <label for="prioridade">Prioridade:</label>
-                <select id="prioridade" name="prioridade" required>
-                    <option value="" selected disabled>Selecione a prioridade</option>
-                    <option value="baixa">Baixa</option>
-                    <option value="media">Média</option>
-                    <option value="alta">Alta</option>
-                </select>
-
-                <p></p>
-
-                <button type="submit">Enviar chamado</button>
-            </form>
-        </section>
+            <button type="submit">Enviar chamado</button>
+        </form>
     </main>
 </body>
 
