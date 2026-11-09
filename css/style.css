@@ -2,6 +2,54 @@ html {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+/*usado para o header cobrir sua largura total sem quebrar o layout*/
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.barra a {
+    color: inherit;
+}
+
+a:hover {
+    color: red;
+}
+
+.barra a:hover {
+    color: rgb(255, 236, 61);
+}
+
 header {
-    background-color: rgb(95, 10, 151);
+    background-color: #7813a2;
+    color: white;
+    padding-top: 7px;
+    padding-left: 15px;
+    padding-bottom: 5px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.barra {
+    display: flex;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    gap: 2rem;
+}
+
+main {
+    padding-left: 15px;
+}
+
+main ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+li span {
+    display: block;
+    font-size: 2rem;
 }
